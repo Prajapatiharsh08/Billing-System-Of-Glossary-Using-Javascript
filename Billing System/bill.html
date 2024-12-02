@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billing System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        ::placeholder {
+            color: white;
+            opacity: 1;
+        }
+
+        body {
+            background-color: rgb(21, 21, 21);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <h1 class="text-center">Billing System</h1>
+        <div class="row mt-5 mb-5">
+            <div class="mb-3 col fs-5">
+                <label for="CustomerName">Customer Name : </label>
+                <input type="text" class="form-control mt-1" id="CustomerName" placeholder="Enter Customer Name">
+            </div>
+            <div class="mb-3 col fs-5">
+                <label for="ContactNo">Contact No : </label>
+                <input type="text" class="form-control mt-1" id="ContactNo" placeholder="Enter Contact No">
+            </div>
+            <div class="mb-3 col fs-5">
+                <label for="BillNo">Bill No : </label>
+                <input type="text" class="form-control mt-1" id="BillNo" placeholder="Enter Bill No">
+            </div>
+        </div>
+
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h3>Snacks</h3>
+                    <div class="mb-3 col">
+                        <label for="">Nutella Choco Spred </label>
+                        <input type="text" class="form-control mt-1" id="Nutella">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Noodles(1 Pack) </label>
+                        <input type="text" class="form-control mt-1" id="Noodles">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Lays (10 Rs.) </label>
+                        <input type="text" class="form-control mt-1" id="Lays">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Oreo (20 Rs.) </label>
+                        <input type="text" class="form-control mt-1" id="Oreo">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Chocolate Muffins </label>
+                        <input type="text" class="form-control mt-1" id="Chocolate">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Dairy Milk (60 Rs.)</label>
+                        <input type="text" class="form-control mt-1" id="Dairy">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Namkeen (15 Rs.) </label>
+                        <input type="text" class="form-control mt-1" id="Namkeen">
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Grocerry</h3>
+                    <div class="mb-3 col">
+                        <label for="">Ashirwad Atta (1kg) </label>
+                        <input type="number" class="form-control mt-1" id="Ashirwad">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Pasta (1kg) </label>
+                        <input type="number" class="form-control mt-1" id="Pasta">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Basmati Rice (1kg) </label>
+                        <input type="number" class="form-control mt-1" id="Basmati">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Sunflower Oil (1 ltr)</label>
+                        <input type="number" class="form-control mt-1" id="Sunflower">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Refined Sugar (1kg) </label>
+                        <input type="number" class="form-control mt-1" id="Refined">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Daal (1kg)</label>
+                        <input type="number" class="form-control mt-1" id="Daal">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Tea Powder (1kg) </label>
+                        <input type="number" class="form-control mt-1" id="Tea">
+                    </div>
+                </div>
+                <div class="col">
+                    <h3>Beauty & Hygiene</h3>
+                    <div class="mb-3 col">
+                        <label for="">Bathing Soap </label>
+                        <input type="number" class="form-control mt-1" id="Bathing-Soap">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Shampoo (1ltr) </label>
+                        <input type="number" class="form-control mt-1" id="Shampoo">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Body Lotion (1ltr) </label>
+                        <input type="number" class="form-control mt-1" id="Body-Lotion">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Face Cream</label>
+                        <input type="number" class="form-control mt-1" id="Face-Cream">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Shaving Foam </label>
+                        <input type="number" class="form-control mt-1" id="Shaving-Foam">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Face Mask (1 peice)</label>
+                        <input type="number" class="form-control mt-1" id="Face-Mask">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Hand Sanitizer (50ml) </label>
+                        <input type="number" class="form-control mt-1" id="Hand-Sanitizer">
+                    </div>
+                </div>
+                <div class="col">
+                    <!-- <h3>Billing</h3> -->
+                    <div class="mb-3 col">
+                        <input type="text" class="form-control mt-5 text-center bg-primary border-0"
+                            placeholder="Bill Area">
+                    </div>
+                    <h3 class="text-uppercase fs-5 text-center">Welcome to Super Market</h3> <br>
+                    <div class="mb-3 col">
+                        <label for="">Bill No :</label>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Customer Name :</label>
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Phone No :</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3 col">
+                        <label for="">Total Snacks Price </label>
+                        <input type="number" class="form-control mt-1" id="TotalSnacksPrice">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Total Grocerry Price </label>
+                        <input type="number" class="form-control mt-1" id="TotalGrocerryPrice">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Total Beauty & Hygiene Price </label>
+                        <input type="number" class="form-control mt-1" id="TotalBeauty&HygienePrice">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3 col">
+                        <label for="">Total Snacks Tax </label>
+                        <input type="number" class="form-control mt-1" id="TotalSnacksTax">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Total Grocerry Tax </label>
+                        <input type="number" class="form-control mt-1" id="TotalGrocerryTax">
+                    </div>
+                    <div class="mb-3 col">
+                        <label for="">Total Beauty & Hygiene Tax </label>
+                        <input type="number" class="form-control mt-1" id="TotalBeauty&HygieneTax">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3 col text-center">
+                        <label for="">Grand Total </label>
+                        <input type="number" class="form-control mt-1" id="GrandTotal">
+                    </div>
+                    <div class="button text-center ">
+                        <button class="btn btn-primary mt-3" onclick="snacks(),grocerry(),beauty(),grandtotal()">Total
+                            Bill</button>
+                        <button class="btn btn-primary mx-3 mt-3">Clear</button>
+                        <button class="btn btn-primary mt-3">Exit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <script>
+        var nutella = 20;
+        var noodles = 40;
+        var lays = 10;
+        var oreo = 20;
+        var chocolate = 40;
+        var dairy = 60;
+        var namkeen = 15;
+
+        function snacks(total1) {
+            var first = document.getElementById("Nutella").value;
+            first = nutella * first;
+
+            var second = document.getElementById("Noodles").value;
+            second = noodles * second;
+
+            var third = document.getElementById("Lays").value;
+            third = lays * third;
+
+            var fourth = document.getElementById("Oreo").value;
+            fourth = oreo * fourth;
+
+            var five = document.getElementById("Chocolate").value;
+            five = chocolate * five;
+
+            var six = document.getElementById("Dairy").value;
+            six = dairy * six;
+
+            var seven = document.getElementById("Namkeen").value;
+            seven = namkeen * seven;
+
+            var total = 0;
+            total = total + parseFloat(first) + parseFloat(second) + parseFloat(third) + parseFloat(fourth) + parseFloat(five) + parseFloat(six) + parseFloat(seven);
+
+            document.getElementById("TotalSnacksPrice").value = total;
+
+            var tax;
+            tax = 0.12 * total;
+            document.getElementById("TotalSnacksTax").value = tax;
+
+            var total1 = total + tax;
+            document.getElementById("GrandTotal").value = total1;
+
+
+        }
+
+        var atta = 20;
+        var pasta = 40;
+        var rice = 10;
+        var oil = 20;
+        var sugar = 40;
+        var daal = 60;
+        var tea = 15;
+        function grocerry(total2) {
+            var first = document.getElementById("Ashirwad").value;
+            first = atta * first;
+
+            var second = document.getElementById("Pasta").value;
+            second = pasta * second;
+
+            var third = document.getElementById("Basmati").value;
+            third = rice * third;
+
+            var fourth = document.getElementById("Sunflower").value;
+            fourth = oil * fourth;
+
+            var five = document.getElementById("Refined").value;
+            five = sugar * five;
+
+            var six = document.getElementById("Daal").value;
+            six = daal * six;
+
+            var seven = document.getElementById("Tea").value;
+            seven = tea * seven;
+
+            var total = 0;
+            total = total + parseFloat(first) + parseFloat(second) + parseFloat(third) + parseFloat(fourth) + parseFloat(five) + parseFloat(six) + parseFloat(seven);
+
+            document.getElementById("TotalGrocerryPrice").value = total;
+
+            var tax;
+            tax = 0.15 * total;
+            document.getElementById("TotalGrocerryTax").value = tax;
+
+            var total2 = total + tax;
+            document.getElementById("GrandTotal").value = total2;
+
+        }
+
+        var soap = 20;
+        var shampoo = 40;
+        var lotion = 10;
+        var cream = 20;
+        var foam = 40;
+        var mask = 60;
+        var sanitizer = 15;
+
+        function beauty(total3) {
+            var first = document.getElementById("Bathing-Soap").value;
+            first = soap * first;
+
+            var second = document.getElementById("Shampoo").value;
+            second = shampoo * second;
+
+            var third = document.getElementById("Body-Lotion").value;
+            third = lotion * third;
+
+            var fourth = document.getElementById("Face-Cream").value;
+            fourth = cream * fourth;
+
+            var five = document.getElementById("Shaving-Foam").value;
+            five = foam * five;
+
+            var six = document.getElementById("Face-Mask").value;
+            six = mask * six;
+
+            var seven = document.getElementById("Hand-Sanitizer").value;
+            seven = sanitizer * seven;
+
+            var total = 0;
+            total = total + parseFloat(first) + parseFloat(second) + parseFloat(third) + parseFloat(fourth) + parseFloat(five) + parseFloat(six) + parseFloat(seven);
+
+            document.getElementById("TotalBeauty&HygienePrice").value = total;
+
+            var tax;
+            tax = 0.18 * total;
+            document.getElementById("TotalBeauty&HygieneTax").value = tax;
+
+            var total3 = total + tax;
+            document.getElementById("GrandTotal").value = total3;
+        }
+
+        function grandtotal(total1, total2, total3) {
+            var Grandtotal = total1 + total2 + total3;
+            document.getElementById("GrandTotal").value = Grandtotal;
+
+            return Grandtotal;
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
